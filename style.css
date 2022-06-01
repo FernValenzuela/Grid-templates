@@ -1,0 +1,66 @@
+.alert {
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.alert p {
+  margin-left: 20px;
+}
+
+.alert button {
+  border: solid darkred 2px;
+  border-radius: 5px;
+  background-color: deeppink;
+  color: white;
+  font-size: 16px;
+}
+
+header,footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+
+aside {
+    border-right: 1px solid #999;
+}
+
+
+
+
+/* Only edit below this line: */
+
+
+.myGrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4,auto);
+  grid-template-areas: 
+  ". five five five"
+  "one one one one"
+  "three two two two" 
+  "four four four four";
+  gap: 30px;
+}
+
+header {
+  grid-area: one;
+}
+
+article {
+  grid-area: two;
+}
+
+aside {
+  grid-area: three;
+}
+
+footer {
+  grid-area: four;
+}
+
+.alert {
+  grid-area: five;
+}
